@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>ElyonX Solutions — Cloud Migration, DevOps & GenAI Consulting | South Africa</title>
+  <meta name="description" content="ElyonX Solutions delivers enterprise cloud migration, DevOps automation, and GenAI integration services across South Africa. AWS, Azure, Google Cloud and AI consulting.">
+  <meta name="keywords" content="cloud migration South Africa, DevOps consulting, GenAI integration, AWS migration, Azure consulting, Google Cloud, AI solutions, digital transformation, Alberton">
+  <meta name="author" content="ElyonX Solutions">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.elyonx.co.za/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.elyonx.co.za/">
+  <meta property="og:title" content="ElyonX Solutions — Cloud, DevOps & GenAI">
+  <meta property="og:description" content="Enterprise cloud migration, DevOps automation, and GenAI integration services across South Africa.">
+  <meta property="og:image" content="https://www.elyonx.co.za/og-image.jpg">
+  <meta property="og:locale" content="en_ZA">
+  <meta property="og:site_name" content="ElyonX Solutions">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ElyonX Solutions — Cloud, DevOps & GenAI">
+  <meta name="twitter:description" content="Enterprise cloud, DevOps, and GenAI consulting across South Africa.">
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%23F4EFE6'/><text x='4' y='25' font-family='Georgia,serif' font-size='26' font-style='italic' font-weight='900' fill='%23FF5A36'>E</text></svg>">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "ElyonX Solutions",
+    "description": "Enterprise cloud migration, DevOps automation, and GenAI integration services",
+    "url": "https://www.elyonx.co.za",
+    "email": "info@elyonx.co.za",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "9154 Inanga Street, Watervalspruit",
+      "addressLocality": "Alberton",
+      "postalCode": "1449",
+      "addressCountry": "ZA"
+    },
+    "areaServed": "South Africa",
+    "serviceType": ["Cloud Migration", "DevOps Consulting", "GenAI Integration"]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;0,9..144,800;1,9..144,400;1,9..144,600&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --paper: #F4EFE6;
+      --paper-deep: #ECE5D5;
+      --ink: #161512;
+      --ink-soft: #3A3631;
+      --mute: #6E665B;
+      --coral: #FF5A36;
+      --olive: #3F4A2A;
+      --serif: 'Fraunces', 'Times New Roman', serif;
+      --sans: 'Inter', system-ui, sans-serif;
+      --mono: 'IBM Plex Mono', 'Courier New', monospace;
+    }
+
+    html { scroll-behavior: smooth; }
+    body { background: var(--paper); color: var(--ink); font-family: var(--sans); line-height: 1.55; overflow-x: hidden; -webkit-font-smoothing: antialiased; }
+
+    body::before {
+      content: ''; position: fixed; inset: 0; pointer-events: none; z-index: 1;
+      background-image: radial-gradient(rgba(22,21,18,0.025) 1px, transparent 1.5px), radial-gradient(rgba(22,21,18,0.015) 1px, transparent 1.5px);
+      background-size: 3px 3px, 7px 7px;
+      background-position: 0 0, 1px 1px;
+      opacity: 0.6; mix-blend-mode: multiply;
+    }
+
+    .container { max-width: 1320px; margin: 0 auto; padding: 0 3rem; position: relative; z-index: 2; }
+    .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; }
+    a { color: inherit; text-decoration: none; }
+    button { font-family: inherit; cursor: pointer; border: none; background: none; }
+    .mono { font-family: var(--mono); font-size: 0.78rem; letter-spacing: 0.05em; text-transform: uppercase; }
+
+    /* NAV */
+    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; padding: 1.5rem 0; transition: background 0.3s, padding 0.3s, border-color 0.3s; border-bottom: 1px solid transparent; }
+    nav.scrolled { background: rgba(244,239,230,0.92); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); padding: 1rem 0; border-color: rgba(22,21,18,0.1); }
+    .nav-inner { max-width: 1320px; margin: 0 auto; padding: 0 3rem; display: flex; align-items: center; justify-content: space-between; }
+    .nav-logo { font-family: var(--serif); font-weight: 800; font-size: 1.5rem; letter-spacing: -0.02em; display: flex; align-items: center; gap: 0.15rem; }
+    .nav-logo .x { color: var(--coral); font-style: italic; }
+    .nav-logo .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--coral); margin-left: 0.45rem; }
+    .nav-links { display: flex; align-items: center; gap: 2.5rem; list-style: none; }
+    .nav-links a { font-size: 0.88rem; color: var(--ink); font-weight: 400; position: relative; padding: 0.25rem 0; }
+    .nav-links a::after { content: ''; position: absolute; left: 0; right: 0; bottom: -2px; height: 1px; background: var(--coral); transform: scaleX(0); transform-origin: left; transition: transform 0.3s; }
+    .nav-links a:hover::after { transform: scaleX(1); }
+    .nav-cta { background: var(--ink); color: var(--paper) !important; padding: 0.55rem 1.25rem; font-size: 0.82rem; letter-spacing: 0.02em; transition: background 0.2s; display: inline-flex; align-items: center; gap: 0.4rem; }
+    .nav-cta::after { display: none !important; }
+    .nav-cta:hover { background: var(--coral); }
+    .hamburger { display: none; flex-direction: column; gap: 5px; padding: 4px; }
+    .hamburger span { display: block; width: 24px; height: 1.5px; background: var(--ink); transition: transform 0.3s, opacity 0.3s; }
+    .hamburger[aria-expanded="true"] span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+    .hamburger[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
+    .hamburger[aria-expanded="true"] span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+    .mobile-menu { display: none; position: fixed; top: 70px; left: 0; right: 0; z-index: 99; background: var(--paper); border-bottom: 1px solid rgba(22,21,18,0.1); padding: 1.5rem 3rem; }
+    .mobile-menu.open { display: block; }
+    .mobile-menu a { display: block; padding: 0.85rem 0; font-size: 1.05rem; border-bottom: 1px solid rgba(22,21,18,0.08); }
+    .mobile-menu a:last-child { border-bottom: none; }
+
+    /* HERO */
+    #home { padding: 9rem 0 5rem; position: relative; min-height: 92vh; display: flex; align-items: center; }
+    .hero-meta { display: flex; align-items: center; gap: 1rem; margin-bottom: 2.5rem; color: var(--mute); flex-wrap: wrap; }
+    .hero-meta::after { content: ''; flex: 1; height: 1px; background: var(--ink); opacity: 0.2; max-width: 280px; }
+    .hero-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 4rem; align-items: end; }
+    h1.display { font-family: var(--serif); font-weight: 400; font-size: clamp(3rem, 8vw, 7rem); line-height: 0.95; letter-spacing: -0.04em; }
+    h1.display .stroke { -webkit-text-stroke: 1.5px var(--ink); color: transparent; font-weight: 600; }
+    h1.display em { font-style: italic; font-weight: 400; color: var(--coral); }
+    .hero-side { padding-bottom: 0.5rem; }
+    .hero-sub { font-size: 1.05rem; color: var(--ink-soft); line-height: 1.65; margin-bottom: 2rem; max-width: 380px; }
+    .hero-actions { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+    .btn { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.85rem 1.5rem; font-size: 0.9rem; font-weight: 500; transition: all 0.2s; border: 1px solid transparent; }
+    .btn-primary { background: var(--ink); color: var(--paper); }
+    .btn-primary:hover { background: var(--coral); transform: translate(-2px, -2px); box-shadow: 4px 4px 0 var(--ink); }
+    .btn-ghost { background: transparent; color: var(--ink); border-color: var(--ink); }
+    .btn-ghost:hover { background: var(--ink); color: var(--paper); }
+    .btn .arrow { transition: transform 0.2s; }
+    .btn:hover .arrow { transform: translateX(3px); }
+    .hero-foot { margin-top: 5rem; display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; padding-top: 2rem; border-top: 1px solid rgba(22,21,18,0.15); }
+    .stat-block .label { color: var(--mute); margin-bottom: 0.5rem; }
+    .stat-block .figure { font-family: var(--serif); font-weight: 600; font-size: clamp(1.8rem, 3vw, 2.4rem); line-height: 1; letter-spacing: -0.02em; }
+    .stat-block .figure em { font-style: italic; color: var(--coral); }
+
+    /* MARQUEE */
+    .marquee { background: var(--ink); color: var(--paper); padding: 1.4rem 0; overflow: hidden; position: relative; z-index: 2; }
+    .marquee-track { display: flex; gap: 4rem; white-space: nowrap; animation: scroll 35s linear infinite; font-family: var(--serif); font-size: 1.4rem; font-weight: 400; letter-spacing: -0.01em; width: max-content; align-items: center; }
+    .marquee-track .star { color: var(--coral); font-style: italic; }
+    @keyframes scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+    /* SECTIONS */
+    section { padding: 7rem 0; position: relative; }
+    .section-head { display: grid; grid-template-columns: 1fr 2fr; gap: 4rem; margin-bottom: 4rem; align-items: end; }
+    .section-num { font-family: var(--serif); font-style: italic; font-weight: 300; font-size: clamp(4rem, 8vw, 7rem); line-height: 0.85; color: var(--ink); }
+    .section-num .small { font-size: 0.4em; vertical-align: super; opacity: 0.6; }
+    h2.section-title { font-family: var(--serif); font-weight: 400; font-size: clamp(2rem, 4vw, 3.4rem); line-height: 1.05; letter-spacing: -0.03em; }
+    h2.section-title em { font-style: italic; color: var(--coral); }
+    .section-kicker { font-size: 1rem; color: var(--ink-soft); max-width: 520px; line-height: 1.7; margin-top: 1.5rem; }
+
+    /* SERVICES */
+    .services-list { border-top: 1.5px solid var(--ink); }
+    .service-row { display: grid; grid-template-columns: 60px 1fr 2fr 1fr; gap: 2rem; align-items: start; padding: 3rem 0; border-bottom: 1px solid rgba(22,21,18,0.15); position: relative; transition: padding-left 0.4s ease; }
+    .service-row::before { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 3px; background: var(--coral); transform: scaleY(0); transform-origin: top; transition: transform 0.4s ease; }
+    .service-row:hover { padding-left: 2rem; }
+    .service-row:hover::before { transform: scaleY(1); }
+    .service-row .num { font-family: var(--mono); font-size: 0.78rem; letter-spacing: 0.05em; color: var(--mute); padding-top: 0.5rem; }
+    .service-row h3 { font-family: var(--serif); font-weight: 400; font-size: clamp(1.5rem, 2.5vw, 2.2rem); line-height: 1.05; letter-spacing: -0.02em; }
+    .service-row h3 em { font-style: italic; color: var(--coral); }
+    .service-row .desc { font-size: 0.95rem; color: var(--ink-soft); line-height: 1.7; max-width: 420px; }
+    .service-tags { display: flex; flex-direction: column; gap: 0.4rem; align-items: flex-start; }
+    .tag { font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.05em; padding: 0.25rem 0.7rem; border: 1px solid var(--ink); border-radius: 100px; transition: background 0.2s, color 0.2s; }
+    .service-row:hover .tag { background: var(--ink); color: var(--paper); }
+
+    /* APPROACH */
+    #approach { background: var(--paper-deep); }
+    .approach-grid { display: grid; grid-template-columns: repeat(2, 1fr); border: 1px solid var(--ink); }
+    .approach-cell { padding: 3rem 2.5rem; border-right: 1px solid var(--ink); border-bottom: 1px solid var(--ink); position: relative; background: var(--paper-deep); transition: background 0.3s; }
+    .approach-cell:hover { background: var(--paper); }
+    .approach-cell:nth-child(2n) { border-right: none; }
+    .approach-cell:nth-child(3), .approach-cell:nth-child(4) { border-bottom: none; }
+    .approach-cell .step { font-family: var(--serif); font-weight: 600; font-style: italic; font-size: 5rem; line-height: 0.85; color: var(--coral); margin-bottom: 1.5rem; letter-spacing: -0.04em; }
+    .approach-cell h4 { font-family: var(--serif); font-weight: 400; font-size: 1.6rem; letter-spacing: -0.02em; margin-bottom: 1rem; line-height: 1.1; }
+    .approach-cell p { font-size: 0.95rem; color: var(--ink-soft); line-height: 1.7; }
+    .approach-cell .meta { position: absolute; top: 2rem; right: 2.5rem; color: var(--mute); }
+
+    /* MANIFESTO */
+    #manifesto { background: var(--ink); color: var(--paper); padding: 8rem 0; }
+    #manifesto::before { content: ''; position: absolute; inset: 0; background-image: radial-gradient(rgba(244,239,230,0.018) 1px, transparent 1.5px); background-size: 4px 4px; pointer-events: none; }
+    .manifesto-inner { position: relative; z-index: 1; }
+    .manifesto-mono { font-family: var(--mono); font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--coral); margin-bottom: 2.5rem; }
+    .manifesto-mono::before { content: '— '; }
+    h2.manifesto-text { font-family: var(--serif); font-weight: 300; font-size: clamp(1.8rem, 4vw, 3.6rem); line-height: 1.15; letter-spacing: -0.02em; max-width: 1100px; }
+    h2.manifesto-text .strike { text-decoration: line-through; text-decoration-color: var(--coral); text-decoration-thickness: 3px; opacity: 0.6; }
+    h2.manifesto-text em { font-style: italic; color: var(--coral); }
+    h2.manifesto-text .ring { display: inline-block; border: 2px solid var(--coral); border-radius: 100px; padding: 0 1rem; transform: rotate(-1deg); }
+    .manifesto-foot { margin-top: 4rem; display: flex; align-items: center; justify-content: space-between; padding-top: 2rem; border-top: 1px solid rgba(244,239,230,0.2); flex-wrap: wrap; gap: 1rem; }
+    .signature { font-family: var(--serif); font-style: italic; font-weight: 400; font-size: 1.4rem; }
+
+    /* VOICES */
+    .voices-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-top: 2rem; }
+    .voice-card { padding: 2.5rem 2rem; border: 1px solid var(--ink); background: var(--paper); position: relative; transition: transform 0.3s, box-shadow 0.3s; display: flex; flex-direction: column; }
+    .voice-card:hover { transform: translate(-4px, -4px); box-shadow: 8px 8px 0 var(--ink); }
+    .voice-card .quote-mark { font-family: var(--serif); font-style: italic; font-weight: 600; font-size: 4rem; line-height: 0.7; color: var(--coral); margin-bottom: 1rem; }
+    .voice-text { font-family: var(--serif); font-weight: 400; font-size: 1.15rem; line-height: 1.45; letter-spacing: -0.01em; margin-bottom: 2rem; flex: 1; }
+    .voice-author { padding-top: 1.5rem; border-top: 1px solid rgba(22,21,18,0.15); }
+    .voice-author .name { font-weight: 500; font-size: 0.95rem; margin-bottom: 0.2rem; }
+    .voice-author .role { font-family: var(--mono); font-size: 0.74rem; letter-spacing: 0.05em; color: var(--mute); text-transform: uppercase; }
+
+    /* CONTACT */
+    #contact { background: var(--paper-deep); padding: 8rem 0; }
+    .contact-wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; }
+    .contact-left h2.section-title { margin-bottom: 2rem; }
+    .contact-meta { list-style: none; margin-top: 3rem; }
+    .contact-meta li { display: grid; grid-template-columns: 120px 1fr; gap: 2rem; padding: 1.25rem 0; border-top: 1px solid rgba(22,21,18,0.15); align-items: center; }
+    .contact-meta li:last-child { border-bottom: 1px solid rgba(22,21,18,0.15); }
+    .contact-meta .label { font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--mute); }
+    .contact-meta .val { font-family: var(--serif); font-size: 1.15rem; font-weight: 400; }
+    .contact-meta a:hover { color: var(--coral); }
+    .form-card { background: var(--paper); border: 1px solid var(--ink); padding: 2.5rem; }
+    .form-card-head { padding-bottom: 1.5rem; margin-bottom: 1.5rem; border-bottom: 1px solid var(--ink); display: flex; align-items: center; justify-content: space-between; }
+    .form-card-head .mono { color: var(--mute); }
+    .form-card-head .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--coral); animation: pulse 2.5s infinite ease-in-out; }
+    @keyframes pulse { 0%,100%{opacity:1;} 50%{opacity:0.4;} }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .field { margin-bottom: 1.25rem; }
+    .field label { display: block; font-family: var(--mono); font-size: 0.7rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--mute); margin-bottom: 0.5rem; }
+    .field input, .field select, .field textarea { width: 100%; background: transparent; border: none; border-bottom: 1px solid var(--ink); padding: 0.6rem 0; font-family: var(--sans); font-size: 1rem; color: var(--ink); outline: none; transition: border-color 0.2s; }
+    .field input:focus, .field select:focus, .field textarea:focus { border-color: var(--coral); border-bottom-width: 2px; }
+    .field input::placeholder, .field textarea::placeholder { color: var(--mute); }
+    .field select { appearance: none; cursor: pointer; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath d='M2 4l4 4 4-4' stroke='%23161512' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 0 center; }
+    .field textarea { resize: vertical; min-height: 90px; }
+    .submit { width: 100%; padding: 1rem; background: var(--ink); color: var(--paper); font-size: 0.95rem; font-weight: 500; letter-spacing: 0.02em; display: flex; align-items: center; justify-content: center; gap: 0.5rem; transition: background 0.2s, transform 0.2s, box-shadow 0.2s; }
+    .submit:hover { background: var(--coral); transform: translate(-2px, -2px); box-shadow: 4px 4px 0 var(--ink); }
+    .submit .arrow { transition: transform 0.2s; }
+    .submit:hover .arrow { transform: translateX(3px); }
+    .form-success { display: none; text-align: center; padding: 2rem 0; font-family: var(--serif); font-style: italic; font-size: 1.3rem; }
+    .form-success.show { display: block; }
+    .form-success::before { content: '✓ '; color: var(--coral); }
+
+    /* FOOTER */
+    footer { background: var(--ink); color: var(--paper); padding: 5rem 0 2rem; }
+    .footer-massive { font-family: var(--serif); font-weight: 400; font-size: clamp(4rem, 18vw, 16rem); line-height: 0.85; letter-spacing: -0.05em; padding-bottom: 3rem; margin-bottom: 3rem; border-bottom: 1px solid rgba(244,239,230,0.2); }
+    .footer-massive em { font-style: italic; color: var(--coral); }
+    .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 3rem; margin-bottom: 4rem; }
+    .footer-col h5 { font-family: var(--mono); font-size: 0.74rem; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(244,239,230,0.5); margin-bottom: 1.2rem; font-weight: 500; }
+    .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 0.7rem; }
+    .footer-col ul a { font-size: 0.95rem; color: var(--paper); transition: color 0.2s; opacity: 0.85; }
+    .footer-col ul a:hover { color: var(--coral); opacity: 1; }
+    .footer-col ul li { font-size: 0.95rem; opacity: 0.85; }
+    .footer-about { font-size: 0.92rem; line-height: 1.7; max-width: 320px; opacity: 0.7; margin-bottom: 1.5rem; }
+    .social-row { display: flex; gap: 0.75rem; }
+    .social-link { width: 36px; height: 36px; border-radius: 50%; border: 1px solid rgba(244,239,230,0.25); display: flex; align-items: center; justify-content: center; font-family: var(--mono); font-size: 0.7rem; transition: background 0.2s, border-color 0.2s, color 0.2s; }
+    .social-link:hover { background: var(--coral); border-color: var(--coral); color: var(--paper); }
+    .footer-bot { padding-top: 2rem; border-top: 1px solid rgba(244,239,230,0.2); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+    .footer-bot p { font-size: 0.82rem; opacity: 0.6; }
+    .footer-legal { display: flex; gap: 1.5rem; }
+    .footer-legal a { font-size: 0.82rem; opacity: 0.6; transition: opacity 0.2s, color 0.2s; }
+    .footer-legal a:hover { opacity: 1; color: var(--coral); }
+
+    /* BACK TO TOP */
+    .back-top { position: fixed; bottom: 2rem; right: 2rem; z-index: 50; width: 48px; height: 48px; border-radius: 50%; background: var(--ink); color: var(--paper); font-family: var(--serif); font-size: 1.2rem; display: flex; align-items: center; justify-content: center; opacity: 0; pointer-events: none; transition: opacity 0.3s, transform 0.2s, background 0.2s; }
+    .back-top.visible { opacity: 1; pointer-events: auto; }
+    .back-top:hover { background: var(--coral); transform: translateY(-3px); }
+
+    .reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    @media (max-width: 980px) {
+      .container, .nav-inner { padding-left: 1.5rem; padding-right: 1.5rem; }
+      .hero-grid { grid-template-columns: 1fr; gap: 2rem; }
+      .hero-foot { grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+      .section-head { grid-template-columns: 1fr; gap: 1.5rem; }
+      .service-row { grid-template-columns: 40px 1fr; row-gap: 1rem; }
+      .service-row .desc { grid-column: 1 / -1; max-width: none; }
+      .service-tags { grid-column: 1 / -1; flex-direction: row; flex-wrap: wrap; }
+      .approach-grid { grid-template-columns: 1fr; }
+      .approach-cell { border-right: none; border-bottom: 1px solid var(--ink); }
+      .approach-cell:last-child { border-bottom: none; }
+      .voices-grid { grid-template-columns: 1fr; }
+      .contact-wrap { grid-template-columns: 1fr; gap: 3rem; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+      .nav-links { display: none; }
+      .hamburger { display: flex; }
+      .form-row { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 540px) {
+      section { padding: 4rem 0; }
+      .footer-grid { grid-template-columns: 1fr; }
+      .footer-bot { flex-direction: column; align-items: flex-start; }
+      .contact-meta li { grid-template-columns: 1fr; gap: 0.3rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo" aria-label="ElyonX home">
+        Elyon<span class="x">X</span>
+        <span class="dot" aria-hidden="true"></span>
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#approach">Approach</a></li>
+        <li><a href="#voices">Voices</a></li>
+        <li><a href="#contact" class="nav-cta">Start a project →</a></li>
+      </ul>
+      <button class="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="mobile-menu" id="mobile-menu" role="menu">
+    <a href="#services" role="menuitem">Services</a>
+    <a href="#approach" role="menuitem">Approach</a>
+    <a href="#voices" role="menuitem">Voices</a>
+    <a href="#contact" role="menuitem">Start a project</a>
+  </div>
+
+  <main>
+
+    <section id="home" aria-labelledby="hero-h">
+      <div class="container">
+        <div class="hero-meta mono">
+          <span>ElyonX Solutions</span>
+          <span>·</span>
+          <span>Est. Alberton, ZA</span>
+          <span>·</span>
+          <span>Cloud · DevOps · GenAI</span>
+        </div>
+        <div class="hero-grid">
+          <div>
+            <h1 id="hero-h" class="display">
+              Cloud, code<br>
+              and <em>intelligence</em><br>
+              that <span class="stroke">scales.</span>
+            </h1>
+          </div>
+          <div class="hero-side">
+            <p class="hero-sub">We help South African enterprises migrate to the cloud, automate the boring parts, and put generative AI to work — without the consultancy theatre.</p>
+            <div class="hero-actions">
+              <a href="#contact" class="btn btn-primary">Start a project <span class="arrow">→</span></a>
+              <a href="#services" class="btn btn-ghost">See our work</a>
+            </div>
+          </div>
+        </div>
+        <div class="hero-foot">
+          <div class="stat-block"><div class="label mono">Projects shipped</div><div class="figure">50<em>+</em></div></div>
+          <div class="stat-block"><div class="label mono">Avg. cost reduction</div><div class="figure">40<em>%</em></div></div>
+          <div class="stat-block"><div class="label mono">Uptime delivered</div><div class="figure">99.9<em>%</em></div></div>
+          <div class="stat-block"><div class="label mono">Years combined exp.</div><div class="figure">15<em>+</em></div></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>AWS</span><span class="star">✦</span>
+        <span>Azure</span><span class="star">✦</span>
+        <span>Google Cloud</span><span class="star">✦</span>
+        <span>Kubernetes</span><span class="star">✦</span>
+        <span>Terraform</span><span class="star">✦</span>
+        <span>Docker</span><span class="star">✦</span>
+        <span>OpenAI</span><span class="star">✦</span>
+        <span>Anthropic</span><span class="star">✦</span>
+        <span>LangChain</span><span class="star">✦</span>
+        <span>AWS</span><span class="star">✦</span>
+        <span>Azure</span><span class="star">✦</span>
+        <span>Google Cloud</span><span class="star">✦</span>
+        <span>Kubernetes</span><span class="star">✦</span>
+        <span>Terraform</span><span class="star">✦</span>
+        <span>Docker</span><span class="star">✦</span>
+        <span>OpenAI</span><span class="star">✦</span>
+        <span>Anthropic</span><span class="star">✦</span>
+        <span>LangChain</span><span class="star">✦</span>
+      </div>
+    </div>
+
+    <section id="services" aria-labelledby="services-h">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-num">01<span class="small">/03</span></div>
+          <div>
+            <h2 id="services-h" class="section-title">What we <em>actually</em><br>do for you.</h2>
+            <p class="section-kicker">Three core practices, deeply integrated. We don't believe in handing you a deck and walking away — we ship working systems, then keep them running.</p>
+          </div>
+        </div>
+        <div class="services-list">
+          <article class="service-row reveal">
+            <div class="num">001</div>
+            <h3>Cloud <em>migration</em></h3>
+            <p class="desc">From legacy on-premise to AWS, Azure, or Google Cloud — assessed, architected, migrated, and optimised. Zero downtime, no surprises.</p>
+            <div class="service-tags"><span class="tag">AWS</span><span class="tag">Azure</span><span class="tag">GCP</span></div>
+          </article>
+          <article class="service-row reveal">
+            <div class="num">002</div>
+            <h3>DevOps <em>automation</em></h3>
+            <p class="desc">CI/CD pipelines, infrastructure as code, container orchestration, observability. We turn your release cycle from monthly anxiety into a daily non-event.</p>
+            <div class="service-tags"><span class="tag">Terraform</span><span class="tag">Kubernetes</span><span class="tag">CI/CD</span></div>
+          </article>
+          <article class="service-row reveal">
+            <div class="num">003</div>
+            <h3>GenAI <em>integration</em></h3>
+            <p class="desc">Custom LLM workflows, RAG systems, intelligent assistants, model fine-tuning. We embed AI into your operations where it actually moves the needle.</p>
+            <div class="service-tags"><span class="tag">LLMs</span><span class="tag">RAG</span><span class="tag">Agents</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="approach" aria-labelledby="approach-h">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-num">02<span class="small">/03</span></div>
+          <div>
+            <h2 id="approach-h" class="section-title">How <em>good</em> work<br>actually gets done.</h2>
+            <p class="section-kicker">No 200-page strategy documents. Four steps, transparently priced, executed in tight feedback loops.</p>
+          </div>
+        </div>
+        <div class="approach-grid reveal">
+          <div class="approach-cell">
+            <span class="meta mono">Week 1–2</span>
+            <div class="step">i.</div>
+            <h4>Discovery</h4>
+            <p>We audit your stack, your team's strengths, and your real constraints — not the ones written in the brief. The output is a clear-eyed map of where you are.</p>
+          </div>
+          <div class="approach-cell">
+            <span class="meta mono">Week 2–3</span>
+            <div class="step">ii.</div>
+            <h4>Strategy</h4>
+            <p>A focused roadmap with clear milestones, costs, and trade-offs. You sign off knowing exactly what you're getting and when.</p>
+          </div>
+          <div class="approach-cell">
+            <span class="meta mono">Week 3+</span>
+            <div class="step">iii.</div>
+            <h4>Execution</h4>
+            <p>We build in tight sprints with weekly demos. Your team is involved end-to-end so the knowledge stays with you when we leave.</p>
+          </div>
+          <div class="approach-cell">
+            <span class="meta mono">Ongoing</span>
+            <div class="step">iv.</div>
+            <h4>Optimise</h4>
+            <p>Post-launch we monitor, refine, and evolve. Cloud and AI aren't set-and-forget — and neither is our partnership.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="manifesto">
+      <div class="container manifesto-inner">
+        <div class="reveal">
+          <p class="manifesto-mono">A note on what we believe</p>
+          <h2 class="manifesto-text">
+            Most consultancies sell <span class="strike">PowerPoints</span> <em>theatre</em>.<br>
+            We build <span class="ring">things that work</span>, transfer the knowledge to your team, and leave you stronger than we found you. That's the entire pitch.
+          </h2>
+          <div class="manifesto-foot">
+            <span class="signature">— The ElyonX team</span>
+            <span class="mono" style="opacity:0.6;">Alberton, Gauteng · 2026</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="voices" aria-labelledby="voices-h">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-num">03<span class="small">/03</span></div>
+          <div>
+            <h2 id="voices-h" class="section-title">Voices from the <em>field.</em></h2>
+            <p class="section-kicker">The kind of feedback we keep close — from the people whose businesses we've helped reshape.</p>
+          </div>
+        </div>
+        <div class="voices-grid">
+          <article class="voice-card reveal">
+            <span class="quote-mark">"</span>
+            <p class="voice-text">They migrated our entire infrastructure to AWS in six weeks with zero downtime. The cost savings in month one alone paid for the engagement.</p>
+            <div class="voice-author">
+              <div class="name">Thabo Mokoena</div>
+              <div class="role">CTO · FinServ Group</div>
+            </div>
+          </article>
+          <article class="voice-card reveal">
+            <span class="quote-mark">"</span>
+            <p class="voice-text">The GenAI assistant they built for our support team handles 70% of queries automatically. Our backlog is gone and our agents finally focus on hard problems.</p>
+            <div class="voice-author">
+              <div class="name">Priya Naidoo</div>
+              <div class="role">Head of Operations · RetailCo</div>
+            </div>
+          </article>
+          <article class="voice-card reveal">
+            <span class="quote-mark">"</span>
+            <p class="voice-text">We went from monthly releases full of fear to deploying confidently every day. Deeply technical and refreshingly direct — exactly what we needed.</p>
+            <div class="voice-author">
+              <div class="name">Johan van Zyl</div>
+              <div class="role">Engineering Lead · LogisticsCo</div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-h">
+      <div class="container">
+        <div class="contact-wrap">
+          <div class="contact-left reveal">
+            <p class="mono" style="color: var(--coral); margin-bottom: 1.5rem;">— Get in touch</p>
+            <h2 id="contact-h" class="section-title">Let's <em>talk</em><br>about your stack.</h2>
+            <p class="section-kicker">A 30-minute call, no slides, no pitch deck. We'll tell you honestly whether we're the right team for the job.</p>
+            <ul class="contact-meta">
+              <li><span class="label">Email</span><a href="mailto:info@elyonx.co.za" class="val">info@elyonx.co.za</a></li>
+              <li><span class="label">Studio</span><span class="val">Alberton, Gauteng</span></li>
+              <li><span class="label">Response</span><span class="val">Within 1 business day</span></li>
+              <li><span class="label">Hours</span><span class="val">Mon–Fri · 08:00–17:00 SAST</span></li>
+            </ul>
+          </div>
+          <div class="form-card reveal">
+            <div class="form-card-head">
+              <span class="mono">Project enquiry · 04</span>
+              <span class="dot" aria-hidden="true"></span>
+            </div>
+            <form id="contact-form" novalidate>
+              <div class="form-row">
+                <div class="field">
+                  <label for="fname">First name</label>
+                  <input type="text" id="fname" name="fname" placeholder="Thabo" autocomplete="given-name" required>
+                </div>
+                <div class="field">
+                  <label for="lname">Last name</label>
+                  <input type="text" id="lname" name="lname" placeholder="Mokoena" autocomplete="family-name" required>
+                </div>
+              </div>
+              <div class="field">
+                <label for="email">Work email</label>
+                <input type="email" id="email" name="email" placeholder="you@company.co.za" autocomplete="email" required>
+              </div>
+              <div class="field">
+                <label for="company">Company</label>
+                <input type="text" id="company" name="company" placeholder="Your company" autocomplete="organization">
+              </div>
+              <div class="field">
+                <label for="service">What can we help with?</label>
+                <select id="service" name="service" required>
+                  <option value="" disabled selected>Choose a service</option>
+                  <option value="cloud">Cloud Migration</option>
+                  <option value="devops">DevOps Automation</option>
+                  <option value="genai">GenAI Integration</option>
+                  <option value="multiple">Multiple / Not sure</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="message">A few lines on the project</label>
+                <textarea id="message" name="message" placeholder="Current setup, challenges, where you'd like to be…" required></textarea>
+              </div>
+              <button type="submit" class="submit">Send enquiry <span class="arrow">→</span></button>
+            </form>
+            <div class="form-success" id="form-success" role="alert">Message received. We'll be in touch within one business day.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-massive">Let's<br>build <em>something</em>.</div>
+      <div class="footer-grid">
+        <div>
+          <div class="nav-logo" style="color:var(--paper); margin-bottom: 1rem;">
+            Elyon<span class="x">X</span>
+            <span class="dot" aria-hidden="true"></span>
+          </div>
+          <p class="footer-about">A South African studio building cloud, DevOps, and GenAI systems for businesses ready to evolve.</p>
+          <div class="social-row" aria-label="Social links">
+            <a href="https://linkedin.com" class="social-link" aria-label="LinkedIn" rel="noopener noreferrer" target="_blank">in</a>
+            <a href="https://twitter.com" class="social-link" aria-label="Twitter / X" rel="noopener noreferrer" target="_blank">𝕏</a>
+            <a href="https://github.com" class="social-link" aria-label="GitHub" rel="noopener noreferrer" target="_blank">gh</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5>Practice</h5>
+          <ul role="list">
+            <li><a href="#services">Cloud Migration</a></li>
+            <li><a href="#services">DevOps Automation</a></li>
+            <li><a href="#services">GenAI Integration</a></li>
+            <li><a href="#approach">Our Approach</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Studio</h5>
+          <ul role="list">
+            <li><a href="#manifesto">Manifesto</a></li>
+            <li><a href="#voices">Voices</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#contact">Start a project</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Reach us</h5>
+          <ul role="list">
+            <li><a href="mailto:info@elyonx.co.za">info@elyonx.co.za</a></li>
+            <li>Alberton, Gauteng</li>
+            <li>South Africa, 1449</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bot">
+        <p>© 2026 ElyonX Solutions (Pty) Ltd · All rights reserved.</p>
+        <nav class="footer-legal" aria-label="Legal">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">POPI Notice</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-top" id="back-top" aria-label="Back to top">↑</button>
+
+  <script>
+    const navbar = document.getElementById('navbar');
+    const backTop = document.getElementById('back-top');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 60);
+      backTop.classList.toggle('visible', window.scrollY > 500);
+    });
+
+    const hamburger = document.querySelector('.hamburger');
+    const mobile = document.getElementById('mobile-menu');
+    hamburger.addEventListener('click', () => {
+      const open = hamburger.getAttribute('aria-expanded') === 'true';
+      hamburger.setAttribute('aria-expanded', String(!open));
+      mobile.classList.toggle('open');
+    });
+    mobile.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        hamburger.setAttribute('aria-expanded', 'false');
+        mobile.classList.remove('open');
+      });
+    });
+
+    const revealEls = document.querySelectorAll('.reveal');
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => entry.target.classList.add('visible'), i * 60);
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -60px 0px' });
+    revealEls.forEach(el => io.observe(el));
+
+    backTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+    document.getElementById('contact-form').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const form = e.target;
+      const btn = form.querySelector('.submit');
+      btn.innerHTML = 'Sending…';
+      btn.disabled = true;
+      setTimeout(() => {
+        form.style.display = 'none';
+        document.getElementById('form-success').classList.add('show');
+      }, 1000);
+    });
+  </script>
+</body>
+</html>
